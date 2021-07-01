@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVNHANOI</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <!-- MOBILE NAV -->
+    <div class="mb-nav">
+      <div class="mb-move-item"></div>
+      <div class="mb-nav-item active">
+        <a href="#home">
+          <i class="bx bxs-home"></i>
+        </a>
+      </div>
+      <div class="mb-nav-item">
+        <a href="#about">
+          <i class="bx bxs-wink-smile"></i>
+        </a>
+      </div>
+      <div class="mb-nav-item">
+        <a href="#food-menu-section">
+          <i class="bx bxs-food-menu"></i>
+        </a>
+      </div>
+      <div class="mb-nav-item">
+        <a href="#testimonial">
+          <i class="bx bxs-comment-detail"></i>
+        </a>
+      </div>
+    </div>
+    <!-- END MOBILE NAV -->
+
+     <!-- MODAL LOGIN  -->
+     <div class="modal hidden">
+      <h3 class="heading">Đăng nhập</h3>
+      <div class="form-group">
+        <label for="Username" class="form-label">Tên</label>
+        <input
+          type="text"
+          placeholder="Mã PD / Username"
+          class="form-control"
+        />
+        <span class="form-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-label">Mật khẩu</label>
+        <input
+          type="password"
+          placeholder="Nhập mật khẩu"
+          class="form-control"
+        />
+        <span class="form-message"></span>
+      </div>
+      <button class="form-submit">Đăng nhập</button>
+     <p href="" class='regis'>Bạn chưa có tài khoản</p>
+    </div>
+    <div class="overlay hidden"></div>
+     <!-- END MODAL LOGIN  -->
+     <!-- MODAL REGIS -->
+     <div class="regisModal den">
+      <h3 class="heading">Đăng ký</h3>
+      <div class="form-group">
+        <label for="fullname" class="form-label">Tên đầy đủ</label>
+        <input id="fullname" name="fullname" type="text" placeholder="VD: Trung Nguyễn" class="form-control">
+        <span class="form-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" type="text" placeholder="VD: nct@gmail.com" class="form-control">
+        <span class="form-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-label">Mật khẩu</label>
+        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+        <span class="form-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+        <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+        <span class="form-message"></span>
+      </div>
+
+      <button class="form-submit">Đăng ký</button>
+     </div>
+
+    </div>
+     <!-- END MODAL REGIS -->
+
+    <!-- BACK TO TOP BTN -->
+    <a href="#home" class="back-to-top">
+      <i class="bx bxs-to-top"></i>
+    </a>
+    <!-- END BACK TO TOP BTN -->
+
+    <!-- TOP NAVIGATION -->
+    <div class="nav">
+      <div class="menu-wrap">
+        <a href="#home">
+          <div class="logo">EVN<span style="color:#ed1117">HANOI</span></div>
+        </a>
+        <div class="menu h-xs">
+          <a href="#home">
+            <div class="menu-item active">Giới thiệu</div>
+          </a>
+          <a href="#about">
+            <div class="menu-item">Tin tức</div>
+          </a>
+          <a href="#food-menu-section">
+            <div class="menu-item">Chăm sóc khách hàng</div>
+          </a>
+          <a href="#testimonial">
+            <div class="menu-item">Liên hệ</div>
+          </a>
+        </div>
+        <div class="right-menu">
+          <div class="menu-item show-modal">Đăng nhập</div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL LOGIN -->
+    <!-- END TOP NAVIGATION -->
+
+    <!-- SECTION HOME -->
+    <section
+      id="home"
+      class="fullheight align-items-center bg-img bg-img-fixed"
+      style="background-image: url(assets/hi.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-xs-12">
+            <div class="slogan">
+              <h1 class="left-to-right play-on-scroll">EVN<span style="color:#ed1117">HANOI</span></h1>
+              <p class="left-to-right play-on-scroll delay-2">
+                Phát triển nguồn năng lượng xanh
+              </p>
+              <div class="left-to-right play-on-scroll delay-4">
+                <button>Bắt Đầu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <!-- END SECTION HOME -->
+
+    <!-- SECION ABOUT -->
+    <section class="about fullheight align-items-center" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-7 h-xs">
+            <img
+              src="assets/EVN.jpg"
+              alt=""
+              class="fullwidth left-to-right play-on-scroll"
+            />
+          </div>
+          <div class="col-5 col-xs-12 align-items-center">
+            <div class="about-slogan right-to-left play-on-scroll">
+              <h3>
+                <span class="primary-color">Tin Ngành điện</span>
+              </h3>
+              <p>
+                Cập nhật thông tin hàng ngày phục vụ cho cuộc sống. Nắm được các
+                vấn đề đang xảy ra về điện tại Việt Nam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECION ABOUT -->
+
+    <!-- FOOD MENU SECTION -->
+    <section
+      class="align-items-center bg-img bg-img-fixed"
+      id="food-menu-section"
+      style="background-image: url(assets/pexels-photo-577514.jpeg)"
+    >
+      <div class="container">
+        <div class="food-menu">
+          <h1>Bạn <span class="primary-color">muốn</span> xem gì?</h1>
+          <p></p>
+          <div class="food-category">
+            <div class="zoom play-on-scroll">
+              <button class="active" data-food-type="all">All</button>
+            </div>
+            <div class="zoom play-on-scroll delay-2">
+              <button data-food-type="salad">Đăng ký mua điện</button>
+            </div>
+            <div class="zoom play-on-scroll delay-4">
+              <button data-food-type="lorem">Tính Hóa đơn</button>
+            </div>
+            <div class="zoom play-on-scroll delay-4">
+              <button data-food-type="lorem">Tra cứu chỉ số công tơ</button>
+            </div>
+            <div class="zoom play-on-scroll delay-8">
+              <button data-food-type="dolor">Đăng ký thay đổi thông tin</button>
+            </div>
+          </div>
+
+          <!-- <div class="food-item-wrap all">
+            <div class="food-item salad-type">
+              <div class="item-wrap bottom-up play-on-scroll">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url(assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Lorem ipsum</h3>
+                    <span> 120$ </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item lorem-type">
+              <div class="item-wrap bottom-up play-on-scroll">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Lorem ipsum</h3>
+                    <span> 120$ </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item ipsum-type">
+              <div class="item-wrap bottom-up play-on-scroll">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url('assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Lorem ipsum</h3>
+                    <span> 120$ </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item lorem-type">
+              <div class="item-wrap bottom-up play-on-scroll">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Lorem ipsum</h3>
+                    <span> 120$ </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item dolor-type">
+              <div class="item-wrap bottom-up play-on-scroll">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Lorem ipsum</h3>
+                    <span> 120$ </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item salad-type">
+              <div class="item-wrap bottom-up play-on-scroll">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url('assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Lorem ipsum</h3>
+                    <span> 120$ </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item lorem-type">
+              <div class="item-wrap bottom-up play-on-scroll">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Lorem ipsum</h3>
+                    <span> 120$ </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item dolor-type">
+              <div class="item-wrap bottom-up play-on-scroll">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Lorem ipsum</h3>
+                    <span> 120$ </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- END FOOD MENU SECTION -->
+
+    <!-- TESTIMONIAL SECTION -->
+    <section id="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-xs-12">
+            <div class="review-wrap zoom play-on-scroll delay-4">
+              <div class="review-info">
+                <h3>Địa chỉ</h3>
+                <p>Hà Nội</p>
+                <div class="rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-xs-12">
+            <div class="review-wrap zoom play-on-scroll delay-4">
+              <div class="review-info">
+                <h3>Đường dây nóng 24/7</h3>
+                <p>1900100 có</p>
+                <div class="rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-xs-12">
+            <div class="review-wrap zoom play-on-scroll delay-4">
+              <div class="review-info">
+                <h3>Hộp thư điện tử</h3>
+                <p>roise@blackpink.vn</p>
+                <div class="rating">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END TESTIMONIAL SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <section
+      data-aos="zoom-in-up"
+      class="footer bg-img"
+      style="background-image: url(assets/pexels-photo-1166643.jpeg)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-5 col-xs-12">
+            <h1>EVNHANOI</h1>
+            <br />
+            <p>
+              Cập nhật thông tin hàng ngày phục vụ cho cuộc sống. Nắm được các
+              vấn đề đang xảy ra về điện tại Việt Nam.
+            </p>
+          </div>
+          <div class="col-3 col-xs-12">
+            <h1>Tra cứu thông tin</h1>
+            <br />
+            <p>
+              <a href="#"> Lịch tạm ngừng cấp điện </a>
+            </p>
+            <p>
+              <a href="#"> Tra cứu chỉ số công tơ </a>
+            </p>
+            <p>
+              <a href="#"> Lịch ghi chỉ số công tơ </a>
+            </p>
+          </div>
+          <div class="col-4 col-xs-12">
+            <h1>Chính sách quy định</h1>
+            <br />
+            <p>
+              <a href=""> Chính sách thanh toán</a>
+            </p>
+            <p>
+              <a href="">Chính sách sử lý khiếu nại</a>
+            </p>
+            <p>
+              <a href="">Chính sách bảo mật thông tin</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FOOTER SECTION -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
