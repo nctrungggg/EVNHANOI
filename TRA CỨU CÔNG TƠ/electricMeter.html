@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./electric_meter.css">
+    <link
+    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <title>Tra cứu chỉ số công tơ</title>
+</head>
+
+<body>
+        <!-- -------electric_meter----------- -->
+        <a href="/index.html#food-menu-section"> <i class='icon-back bx bx-arrow-back'></i></a>
+
+        <div class="elcetric_meter">
+            <h1 class="heading">TRA CỨU CHỈ SỐ CÔNG TƠ</h1>
+            <div class="form-row">
+                <div class="form-group"><label>Tỉnh, thành phố <span>*</span></label><select
+                        class="dhash-form-box form-control" name="tinhThanhPhoId">
+                        <option selected="" value="">-- Chọn Tỉnh/Thành phố --</option>
+                        <option value="01">Thành phố Hà Nội</option>
+                    </select></div>
+                <div class="form-group"><label>Quận, huyện <span>*</span></label><select
+                        class="dhash-form-box form-control" name="quanHuyenId">
+                        <option selected="" value="">-- Chọn Quận/Huyện --</option>
+                        <!---->
+                        <option value="01002"> Quận Hoàn Kiếm </option>
+                        <option value="01007"> Quận Hai Bà Trưng </option>
+                        <option value="01001"> Quận Ba Đình </option>
+                        <option value="01006"> Quận Đống Đa </option>
+                        <option value="01019"> Quận Nam Từ Liêm </option>
+                        <option value="01020"> Huyện Thanh Trì </option>
+                        <option value="01018"> Huyện Gia Lâm </option>
+                        <option value="01017"> Huyện Đông Anh </option>
+                        <option value="01016"> Huyện Sóc Sơn </option>
+                        <option value="01003"> Quận Tây Hồ </option>
+                        <option value="01009"> Quận Thanh Xuân </option>
+                        <option value="01005"> Quận Cầu Giấy </option>
+                        <option value="01008"> Quận Hoàng Mai </option>
+                        <option value="01004"> Quận Long Biên </option>
+                        <option value="01250"> Huyện Mê Linh </option>
+                        <option value="01268"> Quận Hà Đông </option>
+                        <option value="01269"> Thị Xã Sơn Tây </option>
+                        <option value="01277"> Huyện Chương Mỹ </option>
+                        <option value="01276"> Huyện Thạch Thất </option>
+                        <option value="01279"> Huyện Thường Tín </option>
+                        <option value="01271"> Huyện Ba Vì </option>
+                        <option value="01273"> Huyện Đan Phượng </option>
+                        <option value="01274"> Huyện Hoài Đức </option>
+                        <option value="01282"> Huyện Mỹ Đức </option>
+                        <option value="01280"> Huyện Phú Xuyên </option>
+                        <option value="01272"> Huyện Phúc Thọ </option>
+                        <option value="01275"> Huyện Quốc Oai </option>
+                        <option value="01278"> Huyện Thanh Oai </option>
+                        <option value="01281"> Huyện Ứng Hòa </option>
+                        <option value="01021"> Quận Bắc Từ Liêm </option>
+                    </select></div>
+                <div class="form-group "><label>Phường, xã <span>*</span></label><select
+                        class="dhash-form-box form-control" name="phuongXaId">
+                        <option selected="" value="0">-- Chọn Phường/Xã --</option>
+                        <!---->
+                    </select></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group hi">
+                    <label>Ngày bắt đầu <span>*</span></label>
+                    <input class="select.dhash-form-box.form-control" type="date" name="bday" ><br><br>
+                </div>
+                <div class="form-group">
+                    <label>Ngày kết thúc <span>*</span></label>
+                    <input class="select.dhash-form-box.form-control" type="date" name="bday" ><br><br>
+                </div>
+
+            </div>
+            <button>Kiểm tra</button>
+            <hr>    
+            <table  >
+                <tr>
+                    <th>Ngày</th>
+                    <th>Giờ</th>
+                    <th>Phút</th>
+                    <th>Số công tơ</th>
+                    <th>HNS</th>
+                    <th>Biểu giá</th>
+                    <th>Chỉ số(Kwh)</th>
+                </tr>
+                <tr>
+                    <td>25/6/2020</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>111-2222-333</td>
+                    <td>1</td>
+                    <td>Kt</td>
+                    <td>748.72</td>
+                </tr>
+                <tr>
+                    <td>25/6/2020</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>111-2222-333</td>
+                    <td>1</td>
+                    <td>Kt</td>
+                    <td>748.72</td>
+                </tr>
+            </table>
+            <button>In hóa đơn</button>
+        </div>
+    </div>
+</body>
+
+</html>

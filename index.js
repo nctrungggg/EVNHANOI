@@ -1,6 +1,7 @@
 // back tot top
 
 let backToTopBtn = document.querySelector(".back-to-top");
+let nav = document.querySelector(".nav");
 
 window.onscroll = () => {
   if (
@@ -8,21 +9,23 @@ window.onscroll = () => {
     document.documentElement.scrollTop > 200
   ) {
     backToTopBtn.style.display = "flex";
+    nav.style.backgroundColor = "var(--background-color)";
   } else {
     backToTopBtn.style.display = "none";
+    nav.style.backgroundColor = "transparent";
   }
 };
 
 // top nav menu
-let menuItems = document.getElementsByClassName('menu-item')
+let menuItems = document.getElementsByClassName("menu-item");
 
 Array.from(menuItems).forEach((item, index) => {
   item.onclick = (e) => {
-        let currMenu = document.querySelector('.menu-item.active')
-        currMenu.classList.remove('active')
-        item.classList.add('active')
-    }
-})
+    let currMenu = document.querySelector(".menu-item.active");
+    currMenu.classList.remove("active");
+    item.classList.add("active");
+  };
+});
 
 // food category
 
@@ -39,7 +42,7 @@ Array.from(categories).forEach((item) => {
     e.target.classList.add("active");
     foodMenuList.classList =
       "food-item-wrap " + e.target.getAttribute("data-food-type");
-      console.log(e.target.getAttribute("data-food-type"));
+    console.log(e.target.getAttribute("data-food-type"));
   };
 });
 
@@ -97,39 +100,32 @@ bottomNavItems.forEach((item, index) => {
   };
 });
 
+("use strict");
+
+const modal = document.querySelector(".modal");
+const regisModal = document.querySelector(".regisModal");
+const overlay = document.querySelector(".overlay");
+const btnsOpenModal = document.querySelector(".show-modal");
+const regis = document.querySelector(".regis");
 
 //login modal
-'use strict';
-
-const modal = document.querySelector('.modal');
-const regisModal = document.querySelector('.regisModal');
-const overlay = document.querySelector('.overlay');
-const btnsOpenModal = document.querySelector('.show-modal');
-const regis = document.querySelector('.regis')
-
-//login
 const openModal = function () {
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
 };
-btnsOpenModal.addEventListener('click', openModal);
+btnsOpenModal.addEventListener("click", openModal);
 
 const closeModal = function () {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-  regisModal.classList.add('den');
-
-  
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+  regisModal.classList.add("den");
 };
-overlay.addEventListener('click', closeModal)
+overlay.addEventListener("click", closeModal);
 
 //regis
 const openRegisModal = function () {
-  regisModal.classList.remove('den');
-  modal.classList.add('hidden');
-  overlayRegis.classList.add('den');
+  regisModal.classList.remove("den");
+  modal.classList.add("hidden");
+  overlayRegis.classList.add("den");
 };
-regis.addEventListener('click', openRegisModal);
-
-
-
+regis.addEventListener("click", openRegisModal);

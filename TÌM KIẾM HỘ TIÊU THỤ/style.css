@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #154398;
+  --background-color: #f0f3f7;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e9e9ff !important;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+body,
+html {
+  margin: 0 auto;
+  width: 1200px;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+  color: #154398;
+}
+
+.search {
+  margin: 20px 0;
+}
+.search-id {
+  margin-right: 10px;
+}
+
+input {
+  padding: 6px 6px;
+  border-radius: 12px;
+  outline: none !important;
+  border: none !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+button {
+  padding: 6px 6px;
+  outline: none !important;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 12px !important;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+button:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--white);
+}
+
+.icon-back {
+  margin-top: 20px;
+  font-size: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid var(--primary-color) !important;
+}
